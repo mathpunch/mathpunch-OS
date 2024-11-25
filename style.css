@@ -1,0 +1,73 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#desktop {
+  background: #0a74da;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#taskbar {
+  background: #333;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#startMenu {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#window {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background: white;
+  border: 2px solid #333;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.window-header {
+  background: #555;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+}
+
+.window-body {
+  flex: 1;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+}
